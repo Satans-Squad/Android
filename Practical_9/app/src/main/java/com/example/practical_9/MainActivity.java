@@ -21,6 +21,26 @@ public class MainActivity extends AppCompatActivity {
         RadioButton male = findViewById(R.id.male);
         RadioButton female = findViewById(R.id.female);
 
+//        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+//                FragmentManager fragmentManager = getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//
+//                switch (i){
+//                    case R.id.male:
+//                        Fragment malefragment = new MaleFragment();
+//                        fragmentTransaction.replace(R.id.container,malefragment);
+//                        break;
+//                    case R.id.female:
+//                        Fragment femalefragment =  new FemaleFragment();
+//                        fragmentTransaction.replace(R.id.container,femalefragment);
+//                        break;
+//                }
+//                fragmentTransaction.commit();
+//
+//            }
+//        });
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -29,16 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (i){
                     case R.id.male:
-                        Fragment malefragment = new MaleFragment();
-                        fragmentTransaction.replace(R.id.container,malefragment);
+                        MaleFragment maleFragment = new MaleFragment();
+                        fragmentTransaction.replace(R.id.container,maleFragment);
                         break;
                     case R.id.female:
-                        Fragment femalefragment =  new FemaleFragment();
-                        fragmentTransaction.replace(R.id.container,femalefragment);
+                        FemaleFragment femaleFragment = new FemaleFragment();
+                        fragmentTransaction.replace(R.id.container,femaleFragment);
                         break;
                 }
                 fragmentTransaction.commit();
-
             }
         });
     }
