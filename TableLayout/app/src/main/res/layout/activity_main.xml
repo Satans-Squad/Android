@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="10dp"
+
+
+        >
+
+        <TableRow
+            android:background="#4260F4"
+            >
+
+            <TextView
+                android:text="Language"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Creator"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Reference"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#4260F4">
+
+            <TextView
+                android:text="Java"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="James Gosling"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="www.java.com"
+                android:id="@+id/java"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:background="#4260F4">
+
+            <TextView
+                android:text="Python"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Guido Van Rossum"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="www.python.org"
+                android:id="@+id/python"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#4260F4">
+
+            <TextView
+                android:text="C++"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+            <TextView
+                android:text="Bjarne Stroustrup"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+            <TextView
+                android:text="www.cpp.com"
+                android:id="@+id/cpp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
